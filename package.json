@@ -1,0 +1,16 @@
+{
+  "name": "practice_Neo4j_NodeJS",
+  "version": "0.0.1",
+  "description": "Practicing neo4j and Node.js",
+  "author": {
+    "name": "Trevor Gile",
+    "email": "sleuthg@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sleuthg/practice_Neo4j_NodeJS"
+  },
+  "dependencies": {
+    "request": "^2.55.0"
+  }
+}
