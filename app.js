@@ -21,3 +21,20 @@ function runCypherQuery(query, params, callback) {
       callback(err, body);
     });
 }
+
+/**
+ * Let’s fire some queries below.
+ * */
+runCypherQuery(
+  'CREATE (somebody:Person { name: {name}, from: {company}, age: {age} }) RETURN somebody', {
+    name: 'Ghuffran',
+    company: 'Modulus',
+    age: 44
+  }, function (err, resp) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(resp);
+    }
+  }
+);
