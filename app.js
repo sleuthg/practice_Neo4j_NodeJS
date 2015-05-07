@@ -29,14 +29,8 @@ var datafile = './data/learning_threads_001.json';
 
 // Read the test data
 // @TODO: Turn this into a function with the filename as a parameter
-fs.readFile(datafile,'UTF-8', function(err,data) {
-  if (err) {
-    return console.log(err);
-  }
-  // console.log(data);
-  var testData = JSON.parse(data);
-  console.log(testData);
-});
+var data = dbapi.loadFile(fs, datafile);
+//dbapi.printData(data);
 
 // Define a function which fires the cypher query.
 function runCypherQuery(query, params, callback) {
